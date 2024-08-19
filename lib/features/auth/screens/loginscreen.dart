@@ -30,7 +30,8 @@ class LoginScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            const GoogleSignInButton()
+            const GoogleSignInButton(),
+            Text("reddit clone")
 
           ],
         ),
