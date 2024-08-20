@@ -31,7 +31,6 @@ class LoginScreen extends StatelessWidget {
               height: 20,
             ),
             const GoogleSignInButton(),
-            Text("reddit clone")
 
           ],
         ),
