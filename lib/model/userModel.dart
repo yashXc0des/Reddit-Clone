@@ -3,7 +3,7 @@ class Usermodel {
   final String profilePic;
   final String banner;
   final String Uid;
-  final bool isAunthenticated;
+  final bool isAunthenticated;  // if guest or not
   final int karma;
   final List<String> awards;
 

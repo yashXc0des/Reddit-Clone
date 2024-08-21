@@ -7,9 +7,9 @@ import '../constants/constants.dart';
 
 class GoogleSignInButton extends ConsumerWidget {
   const GoogleSignInButton({super.key});
-  void signInWithGoogle(WidgetRef ref) {
+  void signInWithGoogle(BuildContext context,WidgetRef ref) {
     final authController = ref.read(AuthControllerProvider);
-    authController.signInWithGoogle();
+    authController.signInWithGoogle(context );
   }
 
   @override
@@ -17,7 +17,7 @@ class GoogleSignInButton extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 20,right: 20),
       child: ElevatedButton(
-        onPressed: () =>signInWithGoogle(ref),
+        onPressed: () =>signInWithGoogle(context,ref),
         style: ElevatedButton.styleFrom(
           backgroundColor: Pallete.greyColor,// Shade of gray for button background
           shape: RoundedRectangleBorder(
