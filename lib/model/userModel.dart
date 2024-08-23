@@ -94,7 +94,8 @@ class Usermodel {
       Uid: map['Uid'] as String,
       isAunthenticated: map['isAunthenticated'] as bool,
       karma: map['karma'] as int,
-      awards: map['awards'] as List<String>,
+      //awards: map['awards'] as List<String>,
+      awards: List<String>.from(map['awards'] ?? [])
     );
   }
 
