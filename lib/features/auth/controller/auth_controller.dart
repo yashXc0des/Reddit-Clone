@@ -4,7 +4,7 @@ import 'package:reddit_clone/features/auth/repository/auth_repository.dart';
 import 'package:reddit_clone/core/utils.dart';
 import '../../../model/userModel.dart';
 
-// The userProvider should be a StateProvider if you want to update the state .
+// The userProvider should be a StateProvider if you want to update the state
 final userProvider = StateProvider<Usermodel?>((ref) => null);
 
 final AuthControllerProvider = Provider((ref) {
