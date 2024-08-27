@@ -19,7 +19,8 @@ class AuthController {
     required AuthRepository authRepository,
     required Ref ref,
   })  : _authRepository = authRepository,
-        _ref = ref;
+        _ref = ref;//just chilling
+
 
   Future<void> signInWithGoogle(BuildContext context) async {
     final result = await _authRepository.signInWithGoogle();
